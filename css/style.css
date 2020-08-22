@@ -196,3 +196,55 @@ h4 {
 .about a {
     color: #722b8b;
 }
+
+/* TECH */
+.tech {
+    width: 100%;
+    padding: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #413a43;
+}
+
+.tech h4 {
+    color: #6acccb;
+    margin-bottom: 50px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.languages img {
+    width: calc(100% / 5 - 80px);
+    box-shadow: 2px 3px 20px #38323a;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.skills li {
+    list-style: none;
+    font-size: 0.8rem;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: #aa81bb;
+    border-radius: 15px;
+    margin: 5px;
+    transition: ease 0.5s;
+}
+
+.skills li:hover {
+    background-color: #c59ed6;
+}
