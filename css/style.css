@@ -248,3 +248,68 @@ h4 {
 .skills li:hover {
     background-color: #c59ed6;
 }
+
+/* EDUCATION */
+.education {
+    width: 100%;
+    padding: 60px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.education h4 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 6px solid #6acccb;
+    color: #722b8b;
+}
+
+.schools {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.school {
+    width: calc(100% / 3 - 20px);
+    color: #413a43;
+}
+
+.school h5 {
+    font-size: 0.9rem;
+    font-family: tommybold;
+}
+
+.school h6 {
+    font-size: 0.8rem;
+}
+
+.school p {
+    color: #776e79;
+    margin-top: 10px;
+}
+
+.certification {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.certification h4 {
+    width: 60px;
+    font-size: 2rem;
+    color: #6acccb;
+    border-bottom: 6px solid #aa81bb;
+}
+
+.certification div {
+    width: calc(100% / 3 - 20px);
+}
+
+.certification .school p:last-child {
+    margin-top: 0;
+}
