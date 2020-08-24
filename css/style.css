@@ -106,7 +106,7 @@ h4 {
     width: calc(50% - 20px);
 }
 
-.contact button {
+button {
     font-family: tommybold;
     color: white;
     background-color: #6acccb;
@@ -118,7 +118,7 @@ h4 {
     transition: ease 0.5s;
 }
 
-.contact button:hover {
+button:hover {
     background-color: #42adac;
 }
 
@@ -259,7 +259,6 @@ h4 {
 
 .education h4 {
     width: 100%;
-    text-align: center;
     border-bottom: 6px solid #6acccb;
     color: #722b8b;
 }
@@ -310,6 +309,131 @@ h4 {
     width: calc(100% / 3 - 20px);
 }
 
+.certification a {
+    text-decoration: none;
+    color: #413a43;
+}
+
 .certification .school p:last-child {
     margin-top: 0;
+}
+
+/* PROJECTS */
+.projects {
+    width: 100%;
+    padding: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: #413a43;
+}
+
+.projects h4 {
+    white-space: nowrap;
+    color: #6acccb;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.frames {
+    width: 55%;
+}
+
+.main-frame {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.main-frame * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    border-radius: 23px;
+}
+
+.sub-frames {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sub-frames div {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.sub-frames div * {
+    opacity: 0.7;
+    transition: ease 0.5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.sub-frames div *:hover {
+    opacity: 1;
+}
+
+.project-info {
+    width: 40%;
+}
+
+.project-info h4 {
+    font-size: 2rem;
+    color: white;
+}
+
+.project-info p {
+    color: #d5cbd6;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.buttons a {
+    width: calc(100% / 2 - 15px);
+}
+
+.buttons a:first-child button {
+    background-color: #aa81bb;
+}
+
+.buttons a:first-child button:hover {
+    background-color: #885e9b;
+}
+
+.buttons a:last-child button {
+    background-color: #55a6d1;
+}
+
+.buttons a:last-child button:hover {
+    background-color: #3a87b1;
 }
