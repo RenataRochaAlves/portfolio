@@ -337,7 +337,9 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 6px solid #776e79;
 }
 
 .frames {
