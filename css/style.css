@@ -566,3 +566,58 @@ button:hover {
     font-size: 0.7rem;
     color: #d5cbd6;
 }
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding: 80px;
+    padding-right: 200px;
+    padding-left: 200px;
+    background: rgb(115,41,140);
+    background: linear-gradient(93deg, rgba(115,41,140,1) 0%, rgba(31,182,199,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h4 {
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    border-bottom: none;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footer-contact {
+    width: calc(100% / 3 - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-contact svg {
+    width: 30px;
+    fill: white;
+    margin-bottom: 15px;
+}
+
+.footer-contact h5 {
+    font-family: tommymedium;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+footer .contact {
+    width: 40%;
+    margin-top: 50px;
+}
