@@ -439,3 +439,97 @@ button:hover {
 .buttons a:last-child button:hover {
     background-color: #3a87b1;
 }
+
+/* OTHER PROJECTS */
+#zoia div {
+    background-image: url(../img/zoia.jpeg);
+}
+
+#sportacao div {
+    background-image: url(../img/sportacao.jpeg);
+}
+
+#sunburbia div {
+    background-image: url(../img/sunburbia.jpg);
+}
+
+#amigo-cor div {
+    background-image: url(../img/cordoce1.jpg);
+}
+
+#freedom-cor div {
+    background-image: url(../img/cordoce2.jpg);
+}
+
+#freeskin div {
+    background-image: url(../img/freeskin.png);
+}
+
+.other-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.other-projects h4 {
+    color: #aa81bb;
+}
+
+.grid {
+    width: 500px;
+    height: 600px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.grid a div {
+    background-position: center;
+    background-size: cover;
+}
+
+.left {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#zoia div {
+    height: 350px;
+}
+
+#sportacao div {
+    height: 230px;
+}
+
+.right {
+    width: calc(55% - 20px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sunburbia div, #middle-right, #freeskin div {
+    height: calc(600px / 3 - 20px);
+}
+
+#middle-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#middle-right a {
+    width: calc(100% / 2 - 10px);
+    height: 100%;
+}
+
+#middle-right a div {
+    height: 100%;
+}
