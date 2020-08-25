@@ -441,27 +441,27 @@ button:hover {
 }
 
 /* OTHER PROJECTS */
-#zoia div {
+#zoia .image {
     background-image: url(../img/zoia.jpeg);
 }
 
-#sportacao div {
+#sportacao .image {
     background-image: url(../img/sportacao.jpeg);
 }
 
-#sunburbia div {
+#sunburbia .image {
     background-image: url(../img/sunburbia.jpg);
 }
 
-#amigo-cor div {
+#amigo-cor .image {
     background-image: url(../img/cordoce1.jpg);
 }
 
-#freedom-cor div {
+#freedom-cor .image {
     background-image: url(../img/cordoce2.jpg);
 }
 
-#freeskin div {
+#freeskin .image {
     background-image: url(../img/freeskin.png);
 }
 
@@ -486,7 +486,11 @@ button:hover {
     margin-top: 50px;
 }
 
-.grid a div {
+.grid a {
+    text-decoration: none;
+}
+
+.grid a .image {
     background-position: center;
     background-size: cover;
 }
@@ -499,11 +503,11 @@ button:hover {
     justify-content: space-between;
 }
 
-#zoia div {
+#zoia .image {
     height: 350px;
 }
 
-#sportacao div {
+#sportacao .image {
     height: 230px;
 }
 
@@ -515,7 +519,7 @@ button:hover {
     justify-content: space-between;
 }
 
-#sunburbia div, #middle-right, #freeskin div {
+#sunburbia .image, #middle-right, #freeskin .image {
     height: calc(600px / 3 - 20px);
 }
 
@@ -530,6 +534,34 @@ button:hover {
     height: 100%;
 }
 
-#middle-right a div {
+#middle-right a .image {
     height: 100%;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0,0, 0.5);
+    color: white;
+    transition: ease 0.5s;
+    opacity: 0;
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.text h5 {
+    font-family: tommymedium;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 0.7rem;
+    color: #d5cbd6;
 }
