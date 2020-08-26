@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Renata Rocha Alves</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <script>
+    var $doc = $('html, body');
+    $('.scroll').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
+    </script>
 </head>
 <body>
     <header>
         <nav>
             <h3>renata rocha alves</h3>
             <ul>
-                <li>sobre mim</li>
-                <li>habilidades</li>
-                <li>formação</li>
-                <li>projetos</li>
-                <li>experiências</li>
+                <a href="#sobremim" class="scroll"><li>sobre mim</li></a>
+                <a href="#habilidades" class="scroll"><li>habilidades</li></a>
+                <a href="#formacao" class="scroll"><li>formação</li></a>
+                <a href="#projetos" class="scroll"><li>projetos</li></a>
+                <a href="#experiencias" class="scroll"><li>experiências</li></a>
             </ul>
         </nav>
         <div class="intro">
@@ -30,7 +42,6 @@
                     <h5>E-mail</h5>
                     <p>renata.rocha.alves@usp.br</p>
                 </div>
-                <!-- EDITAR DEPOIS -->
                 <a id="cv-download" class="a-button" href="img/CV - Renata Rocha (4).pdf" download>
                     <button>Baixar CV</button>
                 </a>
@@ -62,7 +73,7 @@
         </div>
     </header>
     <main>
-       <div class="about">
+       <div class="about" id="sobremim">
             <div>
                 <h4>Sobre mim</h4>
                 <p>Sou uma desenvolvedora Web Full Stack cada dia mais apaixonada pela área de tecnologia. Minha missão é tirar invenções do mundo das ideias para a vida real, comecei fazendo isso através da Moda e do Design, o que me ensinou muito não só sobre estética mas, principalmente, sobre colocar o usuário final em primeiro lugar e participar de sua vida com produtos que solucionem suas dores.</p>
@@ -74,7 +85,7 @@
             </div>
         </div>
 
-        <div class="tech">
+        <div class="tech" id="habilidades">
             <h4>Habilidades</h4>
             <div class="languages">
                 <img src="img/php.png" alt="PHP">
@@ -110,7 +121,7 @@
             </ul>
         </div>
 
-        <div class="education">
+        <div class="education" id="formacao">
             <h4>Formação</h4>
             <div class="schools">
                 <div class="school">
@@ -133,7 +144,6 @@
                 </div>   
             </div>
             
-
             <div class="certification">
                 <div>
                    <h4>Certificados</h4> 
@@ -153,7 +163,7 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div class="projects" id="projetos">
             <h4>Projetos de Desenvolvimento</h4>
             <div class="project">
                 <div class="frames">
@@ -336,7 +346,7 @@
             </div>
         </div>
 
-        <div class="education">
+        <div class="education" id="experiencias">
             <h4>Experiências Profissionais</h4>
             <div class="schools">
                 <div class="school">
