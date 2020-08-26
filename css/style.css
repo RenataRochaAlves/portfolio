@@ -356,6 +356,7 @@ button:hover {
     height: 300px;
     border-radius: 30px;
     position: relative;
+    overflow: hidden;
 }
 
 .main-frame * {
@@ -363,11 +364,15 @@ button:hover {
     left: 50%;
     top: 50%;
     height: 100%;
-    width: 100%;
+    width: auto;
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
     border-radius: 23px;
+}
+
+.main-frame iframe {
+    width: 100%;
 }
 
 .sub-frames {
