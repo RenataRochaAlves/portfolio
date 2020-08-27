@@ -649,3 +649,168 @@ footer .contact {
         height: 120px;
     }
 }
+
+@media (max-width: 970px){
+    header nav ul {
+        width: 70%;
+    }
+
+    .intro {
+        width: 300px;
+        right: 5%;
+    }
+
+    .about, .schools, .certification, .project {
+        flex-direction: column;
+    }
+
+    .about div, .schools div, .certification div, .project div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .languages img {
+        width: calc(100% / 5 - 30px);
+    }
+
+    .main-frame {
+        height: 350px;
+    }
+
+    .sub-frames div {
+        width: 150px;
+    }
+
+    .footer-contact {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .a-button {
+        width: calc(50% - 10px);
+    }
+
+    footer .contact {
+        width: 60%;
+    }
+}
+
+@media (max-width: 769px){
+    h4 {
+        font-size: 2rem;
+    }
+
+    header {
+        height: 600px;
+        background-image: url(../img/background-mobile.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .intro {
+        position: unset;
+        padding-bottom: 20px;
+    }
+
+    .about, .tech, .education, .projects, footer {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    footer nav, footer .contact {
+        width: 100%;
+    }
+
+    .grid {
+        width: 400px;
+        height: 500px;
+    }
+
+    #zoia .image {
+        height: 300px;
+    }
+
+    #sportacao .image {
+        height: 180px;
+    }
+
+    #sunburbia .image, #middle-right, #freeskin .image {
+        height: calc(500px / 3 - 15px);
+    }
+
+    .projects h4 {
+        white-space: unset;
+    }
+
+    .main-frame {
+        height: 300px;
+    }
+
+    .sub-frames div {
+        width: 130px;
+        height: 110px;
+    }
+    .project-info {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 480px){
+    header {
+        height: 100vh;
+    }
+
+    .about, .tech, .education, .projects, footer {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .about div img {
+        width: 200px;
+    }
+
+    .languages img {
+        width: calc(100% / 5 - 20px);
+    }
+
+    .main-frame {
+        height: 250px;
+    }
+
+    .sub-frames div {
+        width: 100px;
+        height: 90px;
+    }
+
+    .grid {
+        width: 280px;
+        height: 400px;
+    }
+
+    #zoia .image {
+        height: 230px;
+    }
+
+    #sportacao .image {
+        height: 150px;
+    }
+
+    #sunburbia .image, #middle-right, #freeskin .image {
+        height: calc(400px / 3 - 15px);
+    }
+
+    footer nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-contact {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
